@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button";
 
 export function CompanyHero() {
   return (
@@ -22,21 +22,32 @@ export function CompanyHero() {
           {/* Left Content */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <h1 className="text-5xl lg:text-7xl font-bold text-primary leading-tight">Company Profile</h1>
-              <p className="text-xl text-muted-foreground">PT. Fauzi Manufacturing Industri</p>
+              <h1 className="text-5xl lg:text-7xl font-bold text-primary leading-tight">
+                Company Profile
+              </h1>
+              <p className="text-xl text-muted-foreground">
+                PT. Fauzi Manufacturing Industri
+              </p>
             </div>
 
             <div className="space-y-6">
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Leading manufacturer of high-quality industrial paints and coatings, serving Indonesia's infrastructure
-                development since 2022.
+                Leading manufacturer of high-quality industrial paints and
+                coatings, serving Indonesia's infrastructure development since
+                2022.
               </p>
 
               <div className="flex flex-wrap gap-4">
-                <Button size="lg" className="bg-primary hover:bg-primary/90">
+                <Button
+                  size="lg"
+                  className="bg-primary hover:bg-primary/90"
+                >
                   Explore Our Products
                 </Button>
-                <Button variant="outline" size="lg">
+                <Button
+                  variant="outline"
+                  size="lg"
+                >
                   Contact Us
                 </Button>
               </div>
@@ -49,7 +60,7 @@ export function CompanyHero() {
               <div className="space-y-4">
                 <div className="aspect-square rounded-2xl overflow-hidden bg-muted">
                   <img
-                    src="/company-profile-images/company-profile-cover.png"
+                    src="/placeholder.svg"
                     alt="Golden Gate Bridge"
                     className="w-full h-full object-cover"
                   />
@@ -83,5 +94,5 @@ export function CompanyHero() {
         </div>
       </div>
     </section>
-  )
+  );
 }

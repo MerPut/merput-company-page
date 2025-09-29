@@ -33,55 +33,42 @@ export function Header() {
             <span className="text-sm text-muted-foreground">PAINT</span>
           </Link>
 
-          {/* Desktop Navigation */}
-          <NavigationMenu className="hidden md:flex">
+          <NavigationMenu
+            className="hidden md:flex relative z-[60]"
+            // style={{ isolation: "isolate" }}
+          >
             <NavigationMenuList>
               <NavigationMenuItem>
-                <Link
+                <NavigationMenuLink
+                  className={cn(
+                    "group inline-flex h-9 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium text-muted-foreground hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground transition-colors"
+                  )}
                   href="#about"
-                  legacyBehavior
-                  passHref
                 >
-                  <NavigationMenuLink
-                    className={cn(
-                      "group inline-flex h-9 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium text-muted-foreground hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground transition-colors"
-                    )}
-                  >
-                    About
-                  </NavigationMenuLink>
-                </Link>
+                  About
+                </NavigationMenuLink>
               </NavigationMenuItem>
 
               <NavigationMenuItem>
-                <Link
+                <NavigationMenuLink
+                  className={cn(
+                    "group inline-flex h-9 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium text-muted-foreground hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground transition-colors"
+                  )}
                   href="#vision-mission"
-                  legacyBehavior
-                  passHref
                 >
-                  <NavigationMenuLink
-                    className={cn(
-                      "group inline-flex h-9 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium text-muted-foreground hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground transition-colors"
-                    )}
-                  >
-                    Vision & Mission
-                  </NavigationMenuLink>
-                </Link>
+                  Vision & Mission
+                </NavigationMenuLink>
               </NavigationMenuItem>
 
               <NavigationMenuItem>
-                <Link
+                <NavigationMenuLink
+                  className={cn(
+                    "group inline-flex h-9 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium text-muted-foreground hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground transition-colors"
+                  )}
                   href="#values"
-                  legacyBehavior
-                  passHref
                 >
-                  <NavigationMenuLink
-                    className={cn(
-                      "group inline-flex h-9 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium text-muted-foreground hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground transition-colors"
-                    )}
-                  >
-                    Values
-                  </NavigationMenuLink>
-                </Link>
+                  Values
+                </NavigationMenuLink>
               </NavigationMenuItem>
 
               <NavigationMenuItem>
@@ -91,38 +78,32 @@ export function Header() {
                 <NavigationMenuContent>
                   <div className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] grid-rows-[1fr,1fr,1fr] lg:grid-cols-[.75fr_1fr]">
                     <div className="row-span-3">
-                      <NavigationMenuLink asChild>
-                        <Link
-                          href="/products"
-                          className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                        >
-                          <div className="mb-2 mt-4 text-lg font-medium">
-                            All Products
-                          </div>
-                          <p className="text-sm leading-tight text-muted-foreground">
-                            Explore our complete range of high-quality coating
-                            solutions
-                          </p>
-                        </Link>
+                      <NavigationMenuLink
+                        href="/products"
+                        className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+                      >
+                        <div className="mb-2 mt-4 text-lg font-medium">
+                          All Products
+                        </div>
+                        <p className="text-sm leading-tight text-muted-foreground">
+                          Explore our complete range of high-quality coating
+                          solutions
+                        </p>
                       </NavigationMenuLink>
                     </div>
                     <div className="grid gap-2">
                       {productsData.categories.slice(0, 3).map((category) => (
                         <NavigationMenuLink
-                          asChild
+                          href={`/products#${category.id}`}
+                          className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                           key={category.id}
                         >
-                          <Link
-                            href={`/products#${category.id}`}
-                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                          >
-                            <div className="text-sm font-medium leading-none">
-                              {category.name}
-                            </div>
-                            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                              {category.description}
-                            </p>
-                          </Link>
+                          <div className="text-sm font-medium leading-none">
+                            {category.name}
+                          </div>
+                          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                            {category.description}
+                          </p>
                         </NavigationMenuLink>
                       ))}
                     </div>
@@ -131,47 +112,25 @@ export function Header() {
               </NavigationMenuItem>
 
               <NavigationMenuItem>
-                <Link
+                <NavigationMenuLink
+                  className={cn(
+                    "group inline-flex h-9 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium text-muted-foreground hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground transition-colors"
+                  )}
                   href="#partners"
-                  legacyBehavior
-                  passHref
                 >
-                  <NavigationMenuLink
-                    className={cn(
-                      "group inline-flex h-9 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium text-muted-foreground hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground transition-colors"
-                    )}
-                  >
-                    Partners
-                  </NavigationMenuLink>
-                </Link>
-              </NavigationMenuItem>
-
-              <NavigationMenuItem>
-                <Link
-                  href="#contact"
-                  legacyBehavior
-                  passHref
-                >
-                  <NavigationMenuLink
-                    className={cn(
-                      "group inline-flex h-9 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium text-muted-foreground hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground transition-colors"
-                    )}
-                  >
-                    Contact
-                  </NavigationMenuLink>
-                </Link>
+                  Partners
+                </NavigationMenuLink>
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
 
           <div className="hidden md:flex items-center space-x-4">
             <Button
-              variant="outline"
               size="sm"
+              asChild
             >
-              Get Quote
+              <Link href="#contact">Contact Us</Link>
             </Button>
-            <Button size="sm">Contact Us</Button>
           </div>
 
           <button
@@ -228,20 +187,14 @@ export function Header() {
               >
                 Partners
               </a>
-              <a
-                href="#contact"
-                className="text-muted-foreground hover:text-foreground transition-colors"
-              >
-                Contact
-              </a>
+
               <div className="flex flex-col space-y-2 pt-4">
                 <Button
-                  variant="outline"
                   size="sm"
+                  asChild
                 >
-                  Get Quote
+                  <Link href="#contact">Contact Us</Link>
                 </Button>
-                <Button size="sm">Contact Us</Button>
               </div>
             </nav>
           </div>

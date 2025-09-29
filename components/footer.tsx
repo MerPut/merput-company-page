@@ -6,7 +6,7 @@ export function Footer() {
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <div className="w-8 h-8 bg-accent rounded-full"></div>
-              <span className="text-xl font-semibold">ColorCraft Paints</span>
+              <span className="text-xl font-semibold">MERPUT Paint</span>
             </div>
             <p className="text-primary-foreground/80 leading-relaxed">
               Premium paint solutions with expert craftsmanship for over 25 years.
@@ -93,7 +93,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-primary-foreground/20 pt-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-          <p className="text-primary-foreground/60 text-sm">© 2024 ColorCraft Paints. All rights reserved.</p>
+          <p className="text-primary-foreground/60 text-sm">© 2025 MERPUT Paint. All rights reserved.</p>
           <div className="flex space-x-6 text-sm text-primary-foreground/60">
             <a href="#" className="hover:text-primary-foreground transition-colors">
               Privacy Policy

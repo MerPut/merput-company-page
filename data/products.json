@@ -1,0 +1,128 @@
+{
+  "categories": [
+    {
+      "id": "marine-coating",
+      "name": "Marine Coating",
+      "description": "Specialized coatings for marine vessels and offshore structures",
+      "products": [
+        {
+          "id": "ship-hull-coating",
+          "name": "Ship Hull Coating",
+          "description": "Anti-fouling and protective coating for ship hulls",
+          "image": "/placeholder.svg?height=200&width=300",
+          "features": ["Anti-corrosion", "Anti-fouling", "Long-lasting protection"],
+          "applications": ["Cargo ships", "Tankers", "Naval vessels"]
+        },
+        {
+          "id": "offshore-platform-coating",
+          "name": "Offshore Platform Coating",
+          "description": "Heavy-duty coating for offshore oil and gas platforms",
+          "image": "/placeholder.svg?height=200&width=300",
+          "features": ["Salt water resistance", "UV protection", "Chemical resistance"],
+          "applications": ["Oil rigs", "Gas platforms", "Marine structures"]
+        },
+        {
+          "id": "marine-deck-coating",
+          "name": "Marine Deck Coating",
+          "description": "Non-slip and weather-resistant deck coating",
+          "image": "/placeholder.svg?height=200&width=300",
+          "features": ["Non-slip surface", "Weather resistant", "Easy maintenance"],
+          "applications": ["Ship decks", "Port facilities", "Marine walkways"]
+        }
+      ]
+    },
+    {
+      "id": "floor-coating",
+      "name": "Floor Coating",
+      "description": "Industrial and commercial floor coating solutions",
+      "products": [
+        {
+          "id": "epoxy-floor-coating",
+          "name": "Epoxy Floor Coating",
+          "description": "Durable epoxy coating for industrial floors",
+          "image": "/placeholder.svg?height=200&width=300",
+          "features": ["Chemical resistance", "Easy to clean", "Seamless finish"],
+          "applications": ["Warehouses", "Factories", "Garages"]
+        },
+        {
+          "id": "polyurethane-floor-coating",
+          "name": "Polyurethane Floor Coating",
+          "description": "Flexible and impact-resistant floor coating",
+          "image": "/placeholder.svg?height=200&width=300",
+          "features": ["Impact resistance", "Flexibility", "Abrasion resistance"],
+          "applications": ["Sports facilities", "Hospitals", "Schools"]
+        },
+        {
+          "id": "anti-static-floor-coating",
+          "name": "Anti-Static Floor Coating",
+          "description": "Specialized coating for electronics manufacturing areas",
+          "image": "/placeholder.svg?height=200&width=300",
+          "features": ["Static dissipation", "Cleanroom compatible", "Chemical resistant"],
+          "applications": ["Electronics manufacturing", "Cleanrooms", "Laboratories"]
+        }
+      ]
+    },
+    {
+      "id": "industrial-coating",
+      "name": "Industrial Coating",
+      "description": "Heavy-duty coatings for industrial applications",
+      "products": [
+        {
+          "id": "structural-steel-coating",
+          "name": "Structural Steel Coating",
+          "description": "Protective coating for structural steel components",
+          "image": "/placeholder.svg?height=200&width=300",
+          "features": ["Corrosion protection", "Fire resistance", "Long-term durability"],
+          "applications": ["Buildings", "Bridges", "Industrial structures"]
+        },
+        {
+          "id": "pipeline-coating",
+          "name": "Pipeline Coating",
+          "description": "Specialized coating for oil and gas pipelines",
+          "image": "/placeholder.svg?height=200&width=300",
+          "features": ["Chemical resistance", "Temperature resistance", "Cathodic protection"],
+          "applications": ["Oil pipelines", "Gas pipelines", "Water systems"]
+        },
+        {
+          "id": "tank-coating",
+          "name": "Tank Coating",
+          "description": "Interior and exterior coating for storage tanks",
+          "image": "/placeholder.svg?height=200&width=300",
+          "features": ["Chemical compatibility", "Leak prevention", "Easy inspection"],
+          "applications": ["Fuel tanks", "Chemical storage", "Water tanks"]
+        }
+      ]
+    },
+    {
+      "id": "protective-coating",
+      "name": "Protective Coating",
+      "description": "Specialized protective coatings for various applications",
+      "products": [
+        {
+          "id": "fire-retardant-coating",
+          "name": "Fire Retardant Coating",
+          "description": "Intumescent coating for fire protection",
+          "image": "/placeholder.svg?height=200&width=300",
+          "features": ["Fire resistance", "Intumescent properties", "Smoke suppression"],
+          "applications": ["Buildings", "Tunnels", "Industrial facilities"]
+        },
+        {
+          "id": "anti-graffiti-coating",
+          "name": "Anti-Graffiti Coating",
+          "description": "Protective coating that prevents graffiti adhesion",
+          "image": "/placeholder.svg?height=200&width=300",
+          "features": ["Easy cleaning", "Graffiti resistance", "UV stable"],
+          "applications": ["Public buildings", "Transportation", "Urban infrastructure"]
+        },
+        {
+          "id": "thermal-barrier-coating",
+          "name": "Thermal Barrier Coating",
+          "description": "High-temperature resistant coating for thermal protection",
+          "image": "/placeholder.svg?height=200&width=300",
+          "features": ["High temperature resistance", "Thermal insulation", "Oxidation resistance"],
+          "applications": ["Power plants", "Aerospace", "Industrial furnaces"]
+        }
+      ]
+    }
+  ]
+}

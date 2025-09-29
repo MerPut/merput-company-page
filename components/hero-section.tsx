@@ -13,9 +13,9 @@ export function HeroSection() {
                 <span className="text-accent font-medium"> exceptional craftsmanship</span>
               </h1>
               <p className="text-xl text-muted-foreground text-pretty leading-relaxed">
-                Transform your spaces with ColorCraft Paints' premium paint solutions. We combine innovative
-                formulations with expert application techniques to deliver lasting beauty and protection for your most
-                important projects.
+                Transform your spaces with MERPUT Paint's premium paint solutions. We combine innovative formulations
+                with expert application techniques to deliver lasting beauty and protection for your most important
+                projects.
               </p>
             </div>
 

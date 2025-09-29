@@ -101,7 +101,7 @@ export function Header() {
                           <div className="text-sm font-medium leading-none">
                             {category.name}
                           </div>
-                          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                          <p className="line-clamp-2 text-sm leading-snug">
                             {category.description}
                           </p>
                         </NavigationMenuLink>

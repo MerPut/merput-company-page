@@ -1,5 +1,4 @@
 "use client";
-import { Header } from "@/components/header";
 import { CompanyHero } from "@/components/company-hero";
 import { AboutSection } from "@/components/about-section";
 import { VisionMissionSection } from "@/components/vision-mission-section";
@@ -14,8 +13,7 @@ import { Footer } from "@/components/footer";
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
-      <Header />
+    <main className="min-h-screen py-[100px]">
       <CompanyHero />
       <AboutSection />
       <VisionMissionSection />

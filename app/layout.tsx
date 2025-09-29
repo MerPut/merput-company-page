@@ -3,6 +3,7 @@ import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
+import { Header } from "@/components/header";
 
 export const metadata: Metadata = {
   title: "MERPUT Paint",
@@ -17,7 +18,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable}`}>
-        {children}
+        <Header />
+        <main className="relative">{children}</main>
         <Analytics />
       </body>
     </html>
